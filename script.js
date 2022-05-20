@@ -8,6 +8,7 @@ var arrCod = [-1]
 var vetorcadastro = [] //usar p excluir
 
 function salvarnoarray(){
+    validacaoID = true
     if (document.getElementById("txtcod").value.length == 0){
         document.getElementById('txtcod').focus()
         window.alert("Por favor, insira o código do produto")
