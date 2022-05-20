@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Belt - cadastro de produtos</title>
+</head>
+<body>
+    <img src=""><h1>Cadastros</h1>
+    <p>Seja bem vindo! Para realizar o cadastro do seu produto, por favor insira os dados abaixo:</p>
+    
+    <div id="cadastro">
+        <label>Código: <input type="number" name="txtcod" id="txtcod" placeholder="código único do produto"></label>
+        <label>Descrição: <input type="text" name="txtdesc" id="txtdesc" placeholder="mínimo de 20 caracteres"></label>
+        <label>Valor: <input type="number" name="txtval" id="txtval" placeholder="ex: 25,80"></label>
+        <input type="button" value="Salvar" class="botao" onclick="salvarnoarray()">
+    </div>
+    <div class="cadastrosRegistrados">
+        <p>Para ver os cadastros registrados, clique no botão</p>
+        <input type="button" value="Ver cadastros" class="botao" onclick="imprimirarray()">
+    </div>
+
+    
+    <div class="cadastrosTotais">
+        <p>Para ver quantos produtos estão cadastrados, clique no botão</p>
+        <input type="button" value="Total de cadastrados" class="botao" onclick="produtoscadastrados()">
+    </div>
+
+    <div id="qtdcadastro"></div>
+    <div id="impressao"></div>
+    
+</body>
+<script src="./script.js"></script>
+</body>
+</html>
